@@ -26,16 +26,18 @@ class ChiselTop() extends Module {
     vecMem = true
   };
   val tappu = Module(new Tappu("Tappu/programs/tt10.tappu", options))
+  tappu.io.in := io.ui_in
+  tappu.io.out := io.uo_out
 
   // Blink with 1 Hz
-  val cntReg = RegInit(0.U(32.W))
-  val ledReg = RegInit(0.U(1.W))
-  cntReg := cntReg + 1.U
-  when (cntReg === 25000000.U) {
-    cntReg := 0.U
-    ledReg := ~ledReg
-  }
-  io.uo_out := ledReg ## add
+  //val cntReg = RegInit(0.U(32.W))
+  //val ledReg = RegInit(0.U(1.W))
+  //cntReg := cntReg + 1.U
+  //when (cntReg === 25000000.U) {
+  //  cntReg := 0.U
+  //  ledReg := ~ledReg
+  //}
+  //io.uo_out := ledReg ## add
 }
 
 object ChiselTop extends App {
