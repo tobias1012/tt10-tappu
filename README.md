@@ -1,6 +1,12 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-# Tiny Tapeout Chisel Project Template
+# Tappu: A Tape based processor
+
+to pull this project remember to execute:
+```bash
+git submodule init
+git submodule update
+```
 
 - [Read the documentation for project](docs/info.md)
 

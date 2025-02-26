@@ -9,12 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
-
+This project implements the Tappu CPU with a ROM memory that turns blinks all outputs
 ## How to test
 
-Explain how to use your project
+Watch the output blink :)
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None
