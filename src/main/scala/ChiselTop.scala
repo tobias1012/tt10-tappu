@@ -22,7 +22,9 @@ class ChiselTop() extends Module {
   val add = WireDefault(0.U(7.W))
   add := io.ui_in + io.uio_in
 
-  val options = new Options(vecMem = true);
+  val options = new Options{
+    vecMem = true
+  };
   val tappu = Module(new Tappu("Tappu/programs/tt10.tappu", options))
 
   // Blink with 1 Hz

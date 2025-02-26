@@ -6,6 +6,7 @@ scalacOptions ++= Seq(
 )
 
 Compile / unmanagedSourceDirectories += baseDirectory.value / "Tappu/src/main/scala"
+libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.4.0"
 
 
 // Chisel 3.5
