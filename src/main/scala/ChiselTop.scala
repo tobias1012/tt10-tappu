@@ -27,7 +27,7 @@ class ChiselTop() extends Module {
   };
   val tappu = Module(new Tappu("Tappu/programs/tt10.tappu", options))
   tappu.io.in := io.ui_in
-  tappu.io.out := io.uo_out
+  io.uo_out := tappu.io.out
 
   // Blink with 1 Hz
   //val cntReg = RegInit(0.U(32.W))
